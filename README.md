@@ -16,3 +16,6 @@ These simple rules lead to complex behavior. Three distinct modes of behavior ar
 All finite initial configurations tested eventually converge to the same repetitive pattern, suggesting that the "highway" is an attractor of Langton's ant, but no
 one has been able to prove that this is true for all such initial configurations. It is only known that the ant's trajectory is always unbounded regardless of the
 initial configuration – this is known as the Cohen–Kong theorem.
+
+### Compile
+g++ -std=c++11 -g -Wall main.cpp Square.cpp Ant.cpp Board.cpp -o main
