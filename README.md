@@ -17,5 +17,5 @@ All finite initial configurations tested eventually converge to the same repetit
 one has been able to prove that this is true for all such initial configurations. It is only known that the ant's trajectory is always unbounded regardless of the
 initial configuration – this is known as the Cohen–Kong theorem.
 
-### Compile
+### Compilation
 g++ -std=c++11 -g -Wall main.cpp Square.cpp Ant.cpp Board.cpp -o main
