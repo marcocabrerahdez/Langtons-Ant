@@ -18,4 +18,4 @@ one has been able to prove that this is true for all such initial configurations
 initial configuration – this is known as the Cohen–Kong theorem.
 
 ### Compilation
->g++ -std=c++11 -g -Wall main.cpp Square.cpp Ant.cpp Board.cpp -o main
+`g++ -std=c++11 -g -Wall main.cpp Square.cpp Ant.cpp Board.cpp -o main`
