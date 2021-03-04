@@ -35,7 +35,7 @@ Board::Board(unsigned int x, unsigned int y) {
 // Print Langton's Ant
 void
 Board::print(unsigned int x, unsigned int y) {
-    std::cout << "La hormiga está en la posición [" << ant.getXcoord() << ", " 
+    std::cout << "Ant's current's position [" << ant.getXcoord() << ", " 
     << ant.getYcoord() << "]" << std::endl;
     
     for (unsigned int i = 1; i <= x; i++) {
@@ -58,9 +58,9 @@ Board::moveAnt(int steps) {
     // Print inicial board
     print(row, col);
     for (int i = 1; i <= steps; i++) {
-        std::cout << "Paso número " << i << std::endl;
+        std::cout << "Step number: " << i << std::endl;
         ant.move(currentSquare);
-        currentSquare = &(board[ant.getXcoord()][ant.getYcoord()]); // Actualiza la posición
+        currentSquare = &(board[ant.getXcoord()][ant.getYcoord()]); // Update's position
         print(row, col);
     }
 }
